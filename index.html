@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AudaSiosa - NutriFlix</title>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+    <header>
+        <a href="#">
+            <img src="src/recursos/imagens/AudaSiosa logo.png" alt="logo">
+        </a>
+        <ul>
+            <li><a href="#">planos</a></li>
+            <li><a href="#">login</a></li>
+        </ul>
+    </header>
+    <!-- slideshow inicio -->
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <!-- <div class="text">exemplo de texto</div> -->
+                <div class="numbertext">numeros dos slides</div>
+                <img src="src/recursos/imagens/foto principal.png" alt="foto 1">
+            </div>
+
+            <!-- <div class="mySlides fade">
+                <div class="text">exemplo de texto</div>
+                <div class="numbertext">numeros dos slides</div>
+                <img src="https://placeholder.com/1200x600" alt="foto 2">
+            </div> -->
+
+            <!-- <div class="mySlides fade">
+                <div class="text">exemplo de texto</div>
+                <div class="numbertext">numeros dos slides</div>
+                <img src="https://placeholder.com/1200x600" alt="foto 3">
+            </div> -->
+
+        </div>
+        <br>
+
+        <div class="dots-slide">
+            <span class="dot"></span>
+            <!-- <span class="dot"></span> -->
+            <!-- <span class="dot"></span> -->
+        </div>
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 5000); // Change image every 2 seconds
+        }
+    </script>
+
+    <!-- slideshow fim -->
+
+    <section class="container-conteudo">
+        <div class="menu-lateral">
+            <ul>
+                <li>
+                    <a href="#">Estratégia dos 7 Dias</a>
+                </li>
+                <li>
+                    <a href="#">lista de videos 2</a>
+                </li>
+                <li>
+                    <a href="#">lista de videos 3</a>
+                </li>
+                <li>
+                    <a href="#">lista de videos 4</a>
+                </li>
+            </ul>
+        </div>
+        <div class="videos-lista">
+            <a href="#" class="lista-video">
+                <img src="https://www.placeholder.com/180x280" alt="exemplo">
+            </a>
+            <a href="#" class="lista-video">
+                <img src="https://www.placeholder.com/180x280" alt="exemplo">
+            </a>
+            <a href="#" class="lista-video">
+                <img src="https://www.placeholder.com/180x280" alt="exemplo">
+            </a>
+            <a href="#" class="lista-video">
+                <img src="https://www.placeholder.com/180x280" alt="exemplo">
+            </a>
+            <a href="#" class="lista-video">
+                <img src="https://www.placeholder.com/180x280" alt="exemplo">
+            </a>
+            <a href="#" class="lista-video">
+                <img src="https://www.placeholder.com/180x280" alt="exemplo">
+            </a>
+            <a href="#" class="lista-video">
+                <img src="https://www.placeholder.com/180x280" alt="exemplo">
+            </a>
+            <a href="#" class="lista-video">
+                <img src="https://www.placeholder.com/180x280" alt="exemplo">
+            </a>
+            <a href="#" class="lista-video">
+                <img src="https://www.placeholder.com/180x280" alt="exemplo">
+            </a>
+            <a href="#" class="lista-video">
+                <img src="https://www.placeholder.com/180x280" alt="exemplo">
+            </a>
+        </div>
+    </section>
+    <footer>
+        <a href="#">
+            <img src="src/recursos/imagens/foto logo bottom.png" alt="">
+        </a>
+    </footer>
+</body>
+
+</html>
